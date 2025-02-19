@@ -7,9 +7,14 @@ data class Conta (
     private var nome: String,
     private var saldoInicial: BigDecimal,
     private var saldoAtual: BigDecimal,
-    private var movimentacoes: List<Movimentacao>
 ){
+    public fun alterarNome(novoNome: String) {
+        nome = novoNome
 
+    }
 
+    public fun alterarSaldoInicial(novoSaldoInicial: BigDecimal) {
+        saldoInicial = novoSaldoInicial
+    }
 
 }

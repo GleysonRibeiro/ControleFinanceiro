@@ -12,4 +12,9 @@ data class Cartao (
     private var diaVencimento: Int
 ) {
 
+    public fun alterarLimite(novoLimite: BigDecimal) {
+        limite = novoLimite
+
+    }
+
 }

@@ -4,7 +4,10 @@ data class Categoria (
     private val id: String,
     private var nome: String,
 ){
-    public fun alterarNome(novoNome: String) {
-        nome = novoNome
+    public fun setNome(novoNome: String) {
+        this.nome = novoNome
+    }
+    public fun getNome(): String {
+        return this.nome
     }
 }
